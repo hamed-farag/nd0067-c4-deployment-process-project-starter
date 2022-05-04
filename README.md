@@ -14,6 +14,8 @@ The project will also include writing documentation and runbooks covering the op
 
 --
 
+## Backend
+
 ### Database Environment
 
 - Connect to the default Postgres Database instance as root user `psql -U postgres`.
@@ -22,6 +24,10 @@ The project will also include writing documentation and runbooks covering the op
 - Connect to database and grant all privileges to the user **ud_storefront**.
   - `\c ud_social_network`
   - `GRANT ALL PRIVILEGES ON DATABASE ud_social_network TO ud_sn_user;`
+
+### URL
+
+`http://localhost:8080`
 
 ### ENV Variables
 
@@ -38,3 +44,12 @@ AWS_BUCKET = ""
 URL = ""
 
 JWT_SECRET = ""
+
+## Frontend
+
+`cd udagram/udagram-frontend`
+`npm install --save --legacy-peer-deps`
+
+### URL
+
+`http://localhost:4200/`
