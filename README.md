@@ -11,3 +11,30 @@ After the initial setup, you will learn to interact with the services you starte
 You will then register for a free account on CircleCi and connect your Github account to it. Based on the manual steps used to deploy the app, you will write a config.yml file that will make the process reproducible in CircleCi. You will set up the process to be executed automatically based when code is pushed on the main Github branch.
 
 The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
+
+--
+
+### Database Environment
+
+- Connect to the default Postgres Database instance as root user `psql -U postgres`.
+- Create a new user `CREATE USER ud_sn_user WITH PASSWORD 'ud_pass@word';`.
+- Create a database called **ud_social_network** `CREATE DATABASE ud_social_network;`.
+- Connect to database and grant all privileges to the user **ud_storefront**.
+  - `\c ud_social_network`
+  - `GRANT ALL PRIVILEGES ON DATABASE ud_social_network TO ud_sn_user;`
+
+### ENV Variables
+
+POSTGRES_USERNAME = ""
+POSTGRES_PASSWORD = ""
+POSTGRES_DB = ""
+POSTGRES_HOST = ""
+POSTGRES_PORT = ""
+
+AWS_REGION = ""
+AWS_PROFILE = ""
+AWS_BUCKET = ""
+
+URL = ""
+
+JWT_SECRET = ""
