@@ -1,22 +1,12 @@
 {
   "scripts": {
-    "frontend:open": "cd udagram-frontend",
-    "backend:open": "cd udagram-api",
-    "package:install": "npm install",
-    "project:build": "npm run build",
-    "project:deploy": "npm run deploy",
-    "project:test": "npm run test",
-    "/": "/",
-    "frontend:install": "run-s frontend:open package:install",
-    "backend:install": "run-s backend:open package:install",
-    "frontend:build": "run-s frontend:open project:build",
-    "backend:build": "run-s backend:open project:build",
-    "frontend:deploy": "run-s frontend:open project:deploy",
-    "backend:deploy": "run-s backend:open project:deploy",
-    "frontend:test": "run-s frontend:open project:test",
-    "backend:test": "run-s backend:open project:test"
-  },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "frontend:install": "cd udagram-frontend && npm install",
+    "backend:install": "cd udagram-api && npm install",
+    "frontend:build": "cd udagram-frontend && npm run build",
+    "backend:build": "cd udagram-api && npm run build",
+    "frontend:test": "cd udagram-frontend && npm run test",
+    "backend:test": "cd udagram-frontend && npm run test",
+    "frontend:deploy": "cd udagram-frontend && npm run deploy",
+    "backend:deploy": "cd udagram-api && npm run deploy"
   }
 }
