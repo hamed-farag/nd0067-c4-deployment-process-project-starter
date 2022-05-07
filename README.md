@@ -107,3 +107,8 @@ JWT_SECRET = ""
 ### URL
 
 `http://localhost:4200/`
+
+## Important Resources
+
+- Create DB: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html#CHAP_GettingStarted.Creating.PostgreSQL
+- Connect Elastic Beanstalk with AWS RDS: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/rds-external-defaultvpc.html
