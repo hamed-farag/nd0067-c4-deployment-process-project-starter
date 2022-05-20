@@ -1,11 +1,11 @@
 branch-defaults:
   default:
-    environment: Udagramapp-env-1
+    environment: udagrambeapp-env
     group_suffix: null
 deploy:
   artifact: www/Archive.zip
 global:
-  application_name: udagram-api
+  application_name: udagram-be-app
   branch: null
   default_ec2_keyname: null
   default_platform: Node.js 16 running on 64bit Amazon Linux 2
