@@ -1,6 +1,14 @@
 # Udagram
 
+# Example:
+[![CircleCI](https://circleci.com/gh/hamed-farag/nd0067-c4-deployment-process-project-starter.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+
 This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+
+## Hosting URL
+
+Backend URL: `http://udagrambeapp-env.eba-kd8kzrax.us-east-1.elasticbeanstalk.com/api/v0`
+Frontend URL: `http://udagram-app-s3.s3-website-us-east-1.amazonaws.com/`
 
 ## Getting Started
 
@@ -60,15 +68,9 @@ The e2e tests are using Protractor and Jasmine.
 - [Node](https://nodejs.org) - Javascript Runtime
 - [Express](https://expressjs.com/) - Javascript API Framework
 
-## License
-
-[License](LICENSE.txt)
-
 ---
 
---
-
-## Backend
+## Backend Configuration
 
 ### Database Environment
 
@@ -78,10 +80,6 @@ The e2e tests are using Protractor and Jasmine.
 - Connect to database and grant all privileges to the user **ud_storefront**.
   - `\c ud_social_network`
   - `GRANT ALL PRIVILEGES ON DATABASE ud_social_network TO ud_sn_user;`
-
-### URL
-
-`http://localhost:8080`
 
 ### ENV Variables
 
@@ -103,10 +101,6 @@ JWT_SECRET = ""
 
 `cd udagram/udagram-frontend`
 `npm install --save --legacy-peer-deps`
-
-### URL
-
-`http://localhost:4200/`
 
 ## Important Resources
 
